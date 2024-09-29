@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
-    'corsheaders'
+    # 'corsheaders'
     # apps
     'account.apps.AccountConfig',
     'product.apps.ProductConfig',
@@ -43,7 +43,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'corsheaders.middleware.CorsMiddleware'
+    # 'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'ecommerce_api.urls'
@@ -149,9 +149,9 @@ SIMPLE_JWT = {
 }
 
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:8000',
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:8000',
+# ]
 
 MERCHANT = "00000000-0000-0000-0000-000000000000"
 
